@@ -1,14 +1,8 @@
-# Deteksi Tepi Citra (Edge Detection)
+# Deteksi Tepi Citra (Laplacian)
 
-Aplikasi web sederhana yang dibangun dengan Python dan Streamlit untuk memenuhi tugas mata kuliah Pengolahan Citra Digital. Aplikasi ini melakukan operasi konvolusi untuk mendeteksi tepi objek dalam gambar menggunakan algoritma Canny.
+Aplikasi ini dibuat untuk memenuhi tugas Pengolahan Citra Digital. Program mendeteksi tepi objek menggunakan operator **Laplacian**.
 
 ## Fitur
-- Upload gambar (JPG/PNG).
-- Deteksi tepi otomatis menggunakan metode Canny.
-- Slider interaktif untuk mengatur nilai threshold (sensitivitas deteksi).
-- Tampilan *side-by-side* antara gambar asli dan hasil deteksi.
-
-## Teknologi
-- Python
-- Streamlit
-- OpenCV
+- Deteksi tepi menggunakan `cv2.Laplacian`.
+- Pre-processing menggunakan Gaussian Blur untuk mengurangi noise.
+- Pengaturan ukuran Kernel (ksize).
